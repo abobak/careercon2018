@@ -15,7 +15,7 @@ public class SampleObject {
 		this.squareInput = input * input;
 		this.name = input.toString();
 		numbers = new LinkedList<>();
-		for (int i=0; i < input.intValue() - 1 ;i++) {
+		for (int i=0; i < input.intValue(); i++) {
 			numbers.add(i);
 		}
 	}
