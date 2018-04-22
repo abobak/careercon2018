@@ -23,7 +23,7 @@ public class ParametrizedPowerTest {
 	    return Stream.of(
 	    		Arguments.of(10.0, 0.0, 1.0),
 	    		Arguments.of(3.0, 2.0, 9.0),
-	    		Arguments.of(-3.0, 3.0, 27.0)
+	    		Arguments.of(-3.0, 3.0, -27.0)
 	    	);
 	}
 }
