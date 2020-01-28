@@ -4,15 +4,15 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-public class TestWithZero {
+class TestWithZero {
 	@Test
-	public void zeroAsFirstArgumentShouldBeOk() {
+	void zeroAsFirstArgumentShouldBeOk() {
 		SophisticatedDivisor sd = new SophisticatedDivisor(0, 2);
 		assertEquals(0, sd.getResult().intValue());
 	}
 	
 	@Test
-	public void zeroAsSecondArgumentShouldBeOk() {
+	void zeroAsSecondArgumentShouldBeOk() {
 		SophisticatedDivisor sd = new SophisticatedDivisor(4, 0);
 		assertEquals(4, sd.getResult().intValue());
 	}

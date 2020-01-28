@@ -5,9 +5,9 @@ import static org.junit.Assert.assertTrue;
 import org.careercon2018.examples.example5.ImprovedCalculator;
 import org.junit.jupiter.api.Test;
 
-public class TestTheCalculator {
+class TestTheCalculator {
 	@Test
-	public void shouldCalculatePositiveValues() {
+	void shouldCalculatePositiveValues() {
 		ImprovedCalculator sc = new ImprovedCalculator(3.0, 2.0);
 		assertEquals((Double) 5.0, sc.add());
 		assertEquals((Double) 1.0, sc.substract());
@@ -17,7 +17,7 @@ public class TestTheCalculator {
 	}
 	
 	@Test
-	public void shouldCalculatePositiveAndNegativeValues() {
+	void shouldCalculatePositiveAndNegativeValues() {
 		ImprovedCalculator sc = new ImprovedCalculator(-5.0, 4.0);
 		assertEquals((Double) (-1.0), sc.add());
 		assertEquals((Double) (-9.0), sc.substract());
@@ -27,7 +27,7 @@ public class TestTheCalculator {
 	}
 	
 	@Test
-	public void shouldCalculateZeros() {
+	void shouldCalculateZeros() {
 		ImprovedCalculator sc = new ImprovedCalculator(1.0, 0.0);
 		assertEquals((Double) 1.0, sc.add());
 		assertEquals((Double) 1.0, sc.substract());

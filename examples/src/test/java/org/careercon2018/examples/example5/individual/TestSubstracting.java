@@ -7,21 +7,21 @@ import org.careercon2018.examples.example4.SophisticatedCalculator;
 import org.careercon2018.examples.example5.ImprovedCalculator;
 import org.junit.jupiter.api.Test;
 
-public class TestSubstracting {
+class TestSubstracting {
 	@Test
-	public void shouldCalculatePositiveValues() {
+	void shouldCalculatePositiveValues() {
 		ImprovedCalculator ic = new ImprovedCalculator(3.0, 2.0);
 		assertEquals((Double) 1.0, ic.substract());
 	}
 	
 	@Test
-	public void shouldCalculatePositiveAndNegativeValues() {
+	void shouldCalculatePositiveAndNegativeValues() {
 		ImprovedCalculator ic = new ImprovedCalculator(-5.0, 4.0);
 		assertEquals((Double) (-9.0), ic.substract());
 	}
 	
 	@Test
-	public void shouldCalculateZeros() {
+	void shouldCalculateZeros() {
 		ImprovedCalculator ic = new ImprovedCalculator(1.0, 0.0);
 		assertEquals((Double) 1.0, ic.substract());
 	}

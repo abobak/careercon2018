@@ -10,11 +10,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-public class ParametrizedPowerTest {
+class ParametrizedPowerTest {
 	@ParameterizedTest(name = "{0} to power {1} should be equal to {2}")
 	@MethodSource("powerFunctionParams")
 	@DisplayName("Test power function")
-	public void testPower(Double arg1, Double arg2, Double result) {
+	void testPower(Double arg1, Double arg2, Double result) {
 		ImprovedCalculator ic = new ImprovedCalculator(arg1, arg2);
 		assertEquals(result, ic.power());
 	}

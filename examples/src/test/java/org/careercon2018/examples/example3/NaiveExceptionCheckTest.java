@@ -5,9 +5,9 @@ import static org.junit.Assert.fail;
 
 import org.junit.jupiter.api.Test;
 
-public class NaiveExceptionCheckTest {
+class NaiveExceptionCheckTest {
 	@Test
-	public void shouldThrowExceptionForDivizorEqualToZero() {
+	void shouldThrowExceptionForDivizorEqualToZero() {
 		try {
 			new DivisorWithValidation(1, 0);
 			fail("Should throw exception");

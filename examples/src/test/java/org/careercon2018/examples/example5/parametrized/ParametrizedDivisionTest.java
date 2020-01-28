@@ -10,11 +10,11 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 
-public class ParametrizedDivisionTest {
+class ParametrizedDivisionTest {
 	@ParameterizedTest(name = "{0} divided by {1} should be equal to {2}")
 	@MethodSource("divisionFunctionParams")
 	@DisplayName("Test division function")
-	public void testDivision(Double arg1, Double arg2, Double result) {
+	void testDivision(Double arg1, Double arg2, Double result) {
 		ImprovedCalculator ic = new ImprovedCalculator(arg1, arg2);
 		assertEquals(result, ic.divide());
 	}

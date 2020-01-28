@@ -4,9 +4,9 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import org.junit.jupiter.api.Test;
 
-public class TestExceptionWithJunit5Assertion {
+class TestExceptionWithJunit5Assertion {
 	@Test
-	public void shouldThrowExceptionForDivizorEqualToZero() {
+	void shouldThrowExceptionForDivizorEqualToZero() {
 		assertThrows(ArithmeticException.class, () -> new DivisorWithValidation(3, 0));
 	}
 }
